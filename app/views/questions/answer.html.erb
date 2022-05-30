@@ -1,5 +1,19 @@
-<p> <%= @question %>
-<%= @answer %> </p>
+<div class="container">
+  <h1 class="banner">Stupid Coach</h1>
+  <p>---------------------------------------------------</p>
+  <div class = "question">
+    <p><%= @question %></p>
+    <p>-<em>You</em></p>
+  </div>
 
-<%# <a href="app/views/questions/ask.html.erb">ask another question</a> %>
-<%= link_to "ask another question", ask_path %>
+  <br>
+
+  <div class = "answer">
+    <p class><%=  @answer %></p>
+    <p >-<em>Your coach</em></p>
+  </div>
+
+  <br>
+  <br>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
